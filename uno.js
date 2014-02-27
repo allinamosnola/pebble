@@ -1,5 +1,11 @@
-simply.title("Hola, Mundo!");
-simple.vibe("short");
-simply.on('singleClick', function(e) {
-  simply.subtitle('You pressed the ' + e.button + ' button!');
+
+/* global simply */
+
+simply.text({
+    title: 'Hello!',
+    subtitle: 'How are you?',
+}, true);
+
+simply.on('singleClick', function() {
+   simply.body("I'm doing great!"); 
 });
